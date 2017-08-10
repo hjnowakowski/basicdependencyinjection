@@ -3,9 +3,9 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-   <bean id="someBean" class="info.henryk.springframework.implementations.SomeBean">
-       <constructor-arg type="java.lang.String" name="someString" value="z kontekstu"/>
-       <constructor-arg name="number" value="2"/>
-   </bean>
+    <bean id="someUser" class="info.henryk.springframework.User" factory-method="getInstance">
+        <constructor-arg value="Janel 😄"/>
+        <constructor-arg value="42"/>
+    </bean>
 
 </beans>
