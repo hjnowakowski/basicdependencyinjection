@@ -3,9 +3,9 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="someUser" class="info.henryk.springframework.User" factory-method="getInstance">
-        <constructor-arg value="Janel 😄"/>
-        <constructor-arg value="42"/>
+    <bean id="usersCreator" class="info.henryk.springframework.UsersCreator"/>
+    <bean id="SomeUser" factory-bean="usersCreator" factory-method="createUser">
+        <constructor-arg value="Janek"/>
     </bean>
 
 </beans>

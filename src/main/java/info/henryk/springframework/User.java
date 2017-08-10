@@ -1,25 +1,20 @@
 package info.henryk.springframework;
 
 public class User {
+    public String name;
 
-    private String name;
-    private int age;
-
-    private User(){
-    }
-
-    public static User getInstance(String name, int age){
-        User user = new User();
-        user.age = age;
-        user.name = name;
-        return user;
+    public String getName() {
+        return name;
     }
 
     @Override
     public String toString() {
         return "User{" +
                 "name='" + name + '\'' +
-                ", age=" + age +
                 '}';
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }
