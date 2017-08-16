@@ -1,11 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:c="http://www.springframework.org/schema/c"
+       xmlns:p="http://www.springframework.org/schema/p"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="usersCreator" class="info.henryk.springframework.UsersCreator"/>
-    <bean id="SomeUser" factory-bean="usersCreator" factory-method="createUser">
-        <constructor-arg value="Janek"/>
-    </bean>
+
+    <bean id="someLocale" class="java.util.Locale" factory-method="getDefault"/>
+
+
+    <bean id="someClass" class="info.henryk.springframework.SomeClass" p:stringValue="coś tam coś tam" p:intValue="34" p:user-ref="someUser2"/>
+
+
+    <bean id="someUser2" class="info.henryk.springframework.User" c:name="Janek" c:age="21" c:locale-ref="someLocale"/>
+
+    <bean id="someUser3" class="info.henryk.springframework.User" c:_0="Janek" c:_1="21" c:_2="someLocale"/>
+
+
 
 </beans>
