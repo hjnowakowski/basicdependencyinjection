@@ -5,14 +5,26 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 
-    <bean id="someLocale" class="java.util.Locale" factory-method="getDefault"/>
-
-
-    <bean id="someClass" class="info.henryk.springframework.SomeClass" p:stringValue="coś tam coś tam" p:intValue="34" p:user-ref="someUser2"/>
-
-
-    <bean id="someUser2" class="info.henryk.springframework.User" c:name="Janek" c:age="21" c:locale-ref="someLocale"/>
 
 
 
+    <bean id="user" class="info.henryk.springframework.User">
+        <!--<property name="name" value="Janek"/>-->
+        <constructor-arg value="Janek"/>
+        <property name="adress">
+            <bean class="info.henryk.springframework.Address">
+                <constructor-arg value="Warszawa"/>
+                <constructor-arg value="02-234"/>
+                <constructor-arg value="Koszykowa"/>
+                <constructor-arg value="23"/>
+            </bean>
+        </property>
+    </bean>
+
+
+
+    <bean id="user2" class="info.henryk.springframework.User">
+        <constructor-arg><null></null></constructor-arg>
+
+    </bean>
 </beans>

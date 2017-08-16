@@ -7,9 +7,9 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class MainSpring {
     public static void main(String[] args) {
         ApplicationContext context = new ClassPathXmlApplicationContext("context.xml");
-        SomeClass contextBean = context.getBean("someClass", SomeClass.class);
+        User user = context.getBean("user2", User.class);
 
-        System.out.println(contextBean.getUser().getName());
+        System.out.println(user);
 
     }
 }
