@@ -5,35 +5,15 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
 
 
-    <bean id="france" class="java.lang.String">
-        <constructor-arg value="Francja"/>
-    </bean>
-    <bean id="germany" class="java.lang.String">
-        <constructor-arg value="Niemcy"/>
+    <bean id="injectedBean1" class="info.henryk.springframework.InjectedBean">
+        <property name="name" value="Wstrzykiwany bean 1"/>
     </bean>
 
+    <bean id="injectedBean2" class="info.henryk.springframework.InjectedBean" autowire-candidate="false">
+        <property name="name" value="Wstrzykiwany bean 2"/>
+    </bean>
 
-    <bean id="someBean" class="info.henryk.springframework.SomeBean">
-        <property name="settings">
-            <props>
-                <prop key="klucz1">wartosc1</prop>
-                <prop key="klucz2">wartosc2</prop>
-                <prop key="klucz3">wartosc3</prop>
-
-            </props>
-        </property>
-        <property name="locales">
-            <map>
-                <entry key-ref="germany">
-                    <util:constant static-field="java.util.Locale.GERMANY"/>
-                </entry>
-                <entry>
-                    <key>
-                        <ref bean="france"/>
-                    </key>
-                    <util:constant static-field="java.util.Locale.FRANCE"/>
-                </entry>
-            </map>
-        </property>
+    <bean id="someBean" class="info.henryk.springframework.SomeBean" autowire="byName">
+        <property name="injectedBean1" ref="injectedBean2"/>
     </bean>
 </beans>

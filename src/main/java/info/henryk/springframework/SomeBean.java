@@ -6,22 +6,22 @@ import java.util.Map;
 import java.util.Properties;
 
 public class SomeBean {
-    private Map<String, Locale> locales;
-    private Properties settings;
+    private InjectedBean InjectedBean1;
+    private InjectedBean injectedBean2;
 
-    public Map<String, Locale> getLocales() {
-        return locales;
+    public InjectedBean getInjectedBean1() {
+        return InjectedBean1;
     }
 
-    public void setLocales(Map<String, Locale> locales) {
-        this.locales = locales;
+    public void setInjectedBean1(InjectedBean injectedBean1) {
+        InjectedBean1 = injectedBean1;
     }
 
-    public Properties getSettings() {
-        return settings;
+    public InjectedBean getInjectedBean2() {
+        return injectedBean2;
     }
 
-    public void setSettings(Properties settings) {
-        this.settings = settings;
+    public void setInjectedBean2(InjectedBean injectedBean2) {
+        this.injectedBean2 = injectedBean2;
     }
 }

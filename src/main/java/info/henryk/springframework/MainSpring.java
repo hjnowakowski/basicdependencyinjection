@@ -10,11 +10,9 @@ public class MainSpring {
     public static void main(String[] args) {
         ApplicationContext context = new ClassPathXmlApplicationContext("context.xml");
         SomeBean someBean = context.getBean("someBean", SomeBean.class);
-        System.out.println(someBean.getLocales());
-        System.out.println(someBean.getSettings());
-        System.out.println(someBean.getClass());
 
-        //System.out.println(user);
+        System.out.println(someBean.getInjectedBean1().getName());
+        System.out.println(someBean.getInjectedBean2().getName());
 
 
     }
