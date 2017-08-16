@@ -1,40 +1,27 @@
 package info.henryk.springframework;
 
-import java.util.List;
-import java.util.Set;
+
+import java.util.Locale;
+import java.util.Map;
+import java.util.Properties;
 
 public class SomeBean {
-    List<String> stringList;
-    Set<Integer> integersList;
-    Long[] longArray;
+    private Map<String, Locale> locales;
+    private Properties settings;
 
-    public SomeBean(List<String> stringList, Set<Integer> integersList, Long[] longArray) {
-        this.stringList = stringList;
-        this.integersList = integersList;
-        this.longArray = longArray;
+    public Map<String, Locale> getLocales() {
+        return locales;
     }
 
-    public List<String> getStringList() {
-        return stringList;
+    public void setLocales(Map<String, Locale> locales) {
+        this.locales = locales;
     }
 
-    public void setStringList(List<String> stringList) {
-        this.stringList = stringList;
+    public Properties getSettings() {
+        return settings;
     }
 
-    public Set<Integer> getIntegersList() {
-        return integersList;
-    }
-
-    public void setIntegersList(Set<Integer> integersList) {
-        this.integersList = integersList;
-    }
-
-    public Long[] getLongArray() {
-        return longArray;
-    }
-
-    public void setLongArray(Long[] longArray) {
-        this.longArray = longArray;
+    public void setSettings(Properties settings) {
+        this.settings = settings;
     }
 }

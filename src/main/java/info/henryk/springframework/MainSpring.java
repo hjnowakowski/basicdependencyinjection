@@ -9,14 +9,13 @@ import java.util.Arrays;
 public class MainSpring {
     public static void main(String[] args) {
         ApplicationContext context = new ClassPathXmlApplicationContext("context.xml");
-        //User user = context.getBean("user2", User.class);
+        SomeBean someBean = context.getBean("someBean", SomeBean.class);
+        System.out.println(someBean.getLocales());
+        System.out.println(someBean.getSettings());
+        System.out.println(someBean.getClass());
 
         //System.out.println(user);
 
-        SomeBean bean = context.getBean("someBean", SomeBean.class);
-        System.out.println(bean.getIntegersList());
-        System.out.println(bean.getStringList());
-        System.out.println(Arrays.toString(bean.getLongArray()));
 
     }
 }
