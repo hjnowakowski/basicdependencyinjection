@@ -6,25 +6,28 @@
 
 
 
-
-
-    <bean id="user" class="info.henryk.springframework.User">
-        <!--<property name="name" value="Janek"/>-->
-        <constructor-arg value="Janek"/>
-        <property name="adress">
-            <bean class="info.henryk.springframework.Address">
-                <constructor-arg value="Warszawa"/>
-                <constructor-arg value="02-234"/>
-                <constructor-arg value="Koszykowa"/>
-                <constructor-arg value="23"/>
-            </bean>
-        </property>
-    </bean>
-
-
-
-    <bean id="user2" class="info.henryk.springframework.User">
-        <constructor-arg><null></null></constructor-arg>
+    <bean id="someBean" class="info.henryk.springframework.SomeBean">
+        <constructor-arg>
+            <list>
+                <value>Uno</value>
+                <value>dos</value>
+                <value>tres</value>
+            </list>
+        </constructor-arg>
+        <constructor-arg>
+            <set>
+                <value>2</value>
+                <value>3</value>
+                <value>4</value>
+            </set>
+        </constructor-arg>
+        <constructor-arg>
+            <array>
+                <value>2</value>
+                <value>4</value>
+                <value>5</value>
+            </array>
+        </constructor-arg>
 
     </bean>
 </beans>
