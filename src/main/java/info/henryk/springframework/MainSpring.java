@@ -9,10 +9,9 @@ import java.util.Arrays;
 public class MainSpring {
     public static void main(String[] args) {
         ApplicationContext context = new ClassPathXmlApplicationContext("context.xml");
-        SomeBean someBean = context.getBean("someBean", SomeBean.class);
-
-        System.out.println(someBean.getInjectedBean1().getName());
-        System.out.println(someBean.getInjectedBean2().getName());
+        Application application = context.getBean("application", Application.class);
+        System.out.println(application.getDictionaryRepository().getMapValue());
+        System.out.println(application.getUsersRepository().exists("janek"));
 
 
     }
