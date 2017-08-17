@@ -4,15 +4,8 @@
        xmlns:p="http://www.springframework.org/schema/p" xmlns:util="http://www.springframework.org/schema/util"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
 
-<bean id="usersRepository" class="info.henryk.springframework.UsersRepository">
 
-</bean>
-
-    <bean id="dictionaryRepository" class="info.henryk.springframework.DictionaryRepository">
-
-    </bean>
-
-    <bean id="application" class="info.henryk.springframework.Application" autowire="constructor">
+    <bean id="someBean" class="info.henryk.springframework.SomeBean" init-method="init">
 
     </bean>
 
