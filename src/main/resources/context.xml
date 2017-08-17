@@ -5,9 +5,10 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
 
 
-    <bean id="someBean" class="info.henryk.springframework.SomeBean" init-method="init">
+<bean id="someBean" class="info.henryk.springframework.SomeBean" destroy-method="destroyMethod">
 
-    </bean>
+</bean>
+
 
 
 </beans>
