@@ -1,10 +1,13 @@
 package info.henryk.springframework;
 
-import org.springframework.beans.factory.InitializingBean;
+public class SomeBean {
+    private String property;
 
-public class SomeBean implements InitializingBean {
+    public String getProperty() {
+        return property;
+    }
 
-    public void afterPropertiesSet() throws Exception {
-        System.out.println("Inicjalizacja");
+    public void setProperty(String property) {
+        this.property = property;
     }
 }

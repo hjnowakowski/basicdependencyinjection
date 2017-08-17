@@ -2,13 +2,24 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:c="http://www.springframework.org/schema/c"
        xmlns:p="http://www.springframework.org/schema/p" xmlns:util="http://www.springframework.org/schema/util"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"
        default-lazy-init="true">
 
 
 
+    <context:property-placeholder location="file:${settingsLocation}"/>
 
+    <bean id="someBean" class="info.henryk.springframework.SomeBean">
+        <property name="property" value="${someProperty}"/>
+    </bean>
 
-        <bean id="someBean" class="info.henryk.springframework.SomeBean" scope="singleton" />
+    <bean id="myDatabase" class="info.henryk.springframework.DatabaseRepository">
+        <property name="host" value="${host}"/>
+        <property name="port" value="${port}"/>
+        <property name="user" value="${user}"/>
+        <property name="password" value="${password}"/>
+    </bean>
+
 
 </beans>
