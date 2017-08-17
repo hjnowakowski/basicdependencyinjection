@@ -6,6 +6,16 @@ public class DatabaseRepository {
     private String user;
     private String password;
 
+    @Override
+    public String toString() {
+        return "DatabaseRepository{" +
+                "host='" + host + '\'' +
+                ", port='" + port + '\'' +
+                ", user='" + user + '\'' +
+                ", password='" + password + '\'' +
+                '}';
+    }
+
     public String getHost() {
         return host;
     }
@@ -36,15 +46,5 @@ public class DatabaseRepository {
 
     public void setPassword(String password) {
         this.password = password;
-    }
-
-    @Override
-    public String toString() {
-        return "DatabaseRepository{" +
-                "host='" + host + '\'' +
-                ", port='" + port + '\'' +
-                ", user='" + user + '\'' +
-                ", password='" + password + '\'' +
-                '}';
     }
 }

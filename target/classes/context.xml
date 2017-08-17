@@ -8,18 +8,9 @@
 
 
 
-    <context:property-placeholder location="file:${settingsLocation}"/>
+    <context:property-override location="file:/Users/henryknowakowski/basicdependencyinjection/properties/settings.properties"/>
 
-    <bean id="someBean" class="info.henryk.springframework.SomeBean">
-        <property name="property" value="${someProperty}"/>
-    </bean>
-
-    <bean id="myDatabase" class="info.henryk.springframework.DatabaseRepository">
-        <property name="host" value="${host}"/>
-        <property name="port" value="${port}"/>
-        <property name="user" value="${user}"/>
-        <property name="password" value="${password}"/>
-    </bean>
+    <bean id="database1" class="info.henryk.springframework.DatabaseRepository"/>
 
 
 </beans>

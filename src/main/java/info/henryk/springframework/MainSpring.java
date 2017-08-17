@@ -1,6 +1,7 @@
 package info.henryk.springframework;
 
 
+import javafx.scene.chart.PieChart;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -9,14 +10,9 @@ public class MainSpring {
     public static void main(String[] args) {
         ApplicationContext context = new ClassPathXmlApplicationContext("context.xml");
 
-        SomeBean someBean = context.getBean("someBean", SomeBean.class);
+        DatabaseRepository database = context.getBean("database", DatabaseRepository.class);
 
-        System.out.println(someBean.getProperty());
-
-        DatabaseRepository myDatabase = context.getBean("myDatabase", DatabaseRepository.class);
-
-        System.out.println(myDatabase.toString());
-
+        System.out.println(database);
 
     }
 }
