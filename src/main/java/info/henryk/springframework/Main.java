@@ -1,18 +1,18 @@
 package info.henryk.springframework;
 
 
-import javafx.scene.chart.PieChart;
+import info.henryk.springframework.implementations.UsersRepositoryImpl;
 import org.springframework.context.ApplicationContext;
-import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-public class MainSpring {
+public class Main {
     public static void main(String[] args) {
         ApplicationContext context = new ClassPathXmlApplicationContext("context.xml");
 
-        DatabaseRepository database = context.getBean("database", DatabaseRepository.class);
+        UsersRepositoryImpl usersRepository = context.getBean("usersRepositoryImpl", UsersRepositoryImpl.class);
 
-        System.out.println(database);
+        usersRepository.createUser("Janek");
+
 
     }
 }

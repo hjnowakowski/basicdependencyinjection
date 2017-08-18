@@ -8,9 +8,12 @@
 
 
 
-    <context:property-override location="file:/Users/henryknowakowski/basicdependencyinjection/properties/settings.properties"/>
+    <!--<bean id="logger" class="info.henryk.springframework.implementations.LoggerImpl"/>-->
+    <!--<bean id="UsersRepository" class="info.henryk.springframework.implementations.UsersRepositoryImpl">-->
 
-    <bean id="database1" class="info.henryk.springframework.DatabaseRepository"/>
+    <!--</bean>-->
 
 
+    <context:annotation-config></context:annotation-config>
+    <context:component-scan base-package="info.henryk.springframework"/>
 </beans>
