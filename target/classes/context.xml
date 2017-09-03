@@ -7,11 +7,8 @@
        default-lazy-init="true">
     <context:component-scan base-package="info.henryk.springframework"/>
 
-    <bean class="info.henryk.springframework.implementations.CounterLogger" >
-        <qualifier value="counterLoggerXmlQualifier"/>
-    </bean>
+    <!--<bean class="info.henryk.springframework.SingletonCounter" scope="singleton"/>-->
+    <!--<bean class="info.henryk.springframework.PrototypeCounter" scope="prototype"/>-->
 
-    <bean class="info.henryk.springframework.implementations.WithDataLogger">
-        <qualifier value="withDateLoggerXmlQualifier"/>
-    </bean>
+
 </beans>
