@@ -2,23 +2,22 @@ package info.henryk.springframework.implementations;
 
 import info.henryk.springframework.api.Logger;
 import info.henryk.springframework.domain.User;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
+
+import javax.annotation.Resource;
 
 @Service("UsersRepository")
 public class UsersRepositoryImpl implements info.henryk.springframework.api.UsersRepository {
 
-    @Autowired
-    @Qualifier("counterLoggerXmlQualifier")
-    private Logger logger;
+    private Logger counterLogger;
 
     public User createUser(String name) {
-        logger.log("Tworzenie użytkownika " + name);
+        counterLogger.log("Tworzenie użytkownika " + name);
         return new User(name);
     }
 
+    @Resource
     public void setLogger(Logger logger) {
-        this.logger = logger;
+        this.counterLogger = logger;
     }
 }

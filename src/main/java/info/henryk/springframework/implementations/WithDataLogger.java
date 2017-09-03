@@ -6,8 +6,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.Date;
 
-@Service
-@Qualifier("withDateLoggerAnnotationQualifier")
+@Service//("withDateLogger")
 public class WithDataLogger implements Logger{
     public void log(String message){
         System.out.println(new Date() + ": " + message);

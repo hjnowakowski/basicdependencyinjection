@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3cf60d38-53fb-4488-9a83-be90b585a3c3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/info/henryk/springframework/implementations/CounterLogger.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/info/henryk/springframework/implementations/WithDataLogger.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/info/henryk/springframework/implementations/LoggerImpl.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/info/henryk/springframework/implementations/CounterLogger.class" afterPath="$PROJECT_DIR$/target/classes/info/henryk/springframework/implementations/CounterLogger.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/info/henryk/springframework/implementations/UsersRepositoryImpl.class" afterPath="$PROJECT_DIR$/target/classes/info/henryk/springframework/implementations/UsersRepositoryImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/info/henryk/springframework/implementations/WithDataLogger.class" afterPath="$PROJECT_DIR$/target/classes/info/henryk/springframework/implementations/WithDataLogger.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/info/henryk/springframework/Main.java" afterPath="$PROJECT_DIR$/src/main/java/info/henryk/springframework/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/info/henryk/springframework/implementations/CounterLogger.java" afterPath="$PROJECT_DIR$/src/main/java/info/henryk/springframework/implementations/CounterLogger.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/info/henryk/springframework/implementations/UsersRepositoryImpl.java" afterPath="$PROJECT_DIR$/src/main/java/info/henryk/springframework/implementations/UsersRepositoryImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/context.xml" afterPath="$PROJECT_DIR$/src/main/resources/context.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/info/henryk/springframework/implementations/WithDataLogger.java" afterPath="$PROJECT_DIR$/src/main/java/info/henryk/springframework/implementations/WithDataLogger.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -69,8 +69,8 @@
       <file leaf-file-name="UsersRepository.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/info/henryk/springframework/api/UsersRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+            <state relative-caret-position="119">
+              <caret line="7" column="34" lean-forward="false" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -79,12 +79,12 @@
       <file leaf-file-name="CounterLogger.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/info/henryk/springframework/implementations/CounterLogger.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="46" lean-forward="true" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="46" />
+            <state relative-caret-position="102">
+              <caret line="6" column="11" lean-forward="false" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#379#380#0" expanded="true" />
-                <element signature="e#441#442#0" expanded="true" />
+                <element signature="e#342#343#0" expanded="true" />
+                <element signature="e#404#405#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -93,12 +93,12 @@
       <file leaf-file-name="WithDataLogger.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/info/henryk/springframework/implementations/WithDataLogger.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="26" lean-forward="false" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="26" />
+            <state relative-caret-position="136">
+              <caret line="8" column="10" lean-forward="false" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#375#376#0" expanded="true" />
-                <element signature="e#438#439#0" expanded="true" />
+                <element signature="e#347#348#0" expanded="true" />
+                <element signature="e#410#411#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -119,8 +119,8 @@
       <file leaf-file-name="UsersRepositoryImpl.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/info/henryk/springframework/implementations/UsersRepositoryImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+            <state relative-caret-position="153">
+              <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -181,14 +181,14 @@
         <option value="$PROJECT_DIR$/src/main/java/info/henryk/springframework/MainSpring.java" />
         <option value="$PROJECT_DIR$/src/main/java/info/henryk/springframework/api/Logger.java" />
         <option value="$PROJECT_DIR$/src/main/java/info/henryk/springframework/implementations/UsersRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/info/henryk/springframework/api/UsersRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/info/henryk/springframework/domain/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/info/henryk/springframework/implementations/LoggerImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/info/henryk/springframework/implementations/CounterLogger.java" />
-        <option value="$PROJECT_DIR$/src/main/java/info/henryk/springframework/implementations/WithDataLogger.java" />
         <option value="$PROJECT_DIR$/src/main/java/info/henryk/springframework/Main.java" />
         <option value="$PROJECT_DIR$/src/main/resources/context.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/info/henryk/springframework/implementations/WithDataLogger.java" />
+        <option value="$PROJECT_DIR$/src/main/java/info/henryk/springframework/implementations/CounterLogger.java" />
         <option value="$PROJECT_DIR$/src/main/java/info/henryk/springframework/implementations/UsersRepositoryImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/info/henryk/springframework/api/UsersRepository.java" />
       </list>
     </option>
   </component>
@@ -961,12 +961,12 @@
       <updated>1502291785605</updated>
       <workItem from="1502291790834" duration="12544000" />
       <workItem from="1502823728189" duration="21888000" />
-      <workItem from="1504467371951" duration="1351000" />
+      <workItem from="1504467371951" duration="2488000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35783000" />
+    <option name="totallyTimeSpent" value="36920000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -989,7 +989,7 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973376" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3995633" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1215,6 +1215,32 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/info/henryk/springframework/SomeBean.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/info/henryk/springframework/DatabaseRepository.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/info/henryk/springframework/SDatabaseRepository.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/info/henryk/springframework/implementations/LoggerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/info/henryk/springframework/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/context.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="51" lean-forward="false" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/info/henryk/springframework/domain/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -1235,66 +1261,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/info/henryk/springframework/api/UsersRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        <state relative-caret-position="119">
+          <caret line="7" column="34" lean-forward="false" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/info/henryk/springframework/implementations/LoggerImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/info/henryk/springframework/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/info/henryk/springframework/implementations/WithDataLogger.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="26" lean-forward="false" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="26" />
+        <state relative-caret-position="136">
+          <caret line="8" column="10" lean-forward="false" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#375#376#0" expanded="true" />
-            <element signature="e#438#439#0" expanded="true" />
+            <element signature="e#347#348#0" expanded="true" />
+            <element signature="e#410#411#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/info/henryk/springframework/implementations/CounterLogger.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="46" lean-forward="true" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="46" />
+        <state relative-caret-position="102">
+          <caret line="6" column="11" lean-forward="false" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#379#380#0" expanded="true" />
-            <element signature="e#441#442#0" expanded="true" />
+            <element signature="e#342#343#0" expanded="true" />
+            <element signature="e#404#405#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/context.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="51" lean-forward="false" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="51" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/info/henryk/springframework/implementations/UsersRepositoryImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        <state relative-caret-position="153">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
