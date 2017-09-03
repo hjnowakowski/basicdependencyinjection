@@ -9,9 +9,11 @@ public class Main {
     public static void main(String[] args) {
         ApplicationContext context = new ClassPathXmlApplicationContext("context.xml");
 
-        UsersRepositoryImpl usersRepository = context.getBean("usersRepositoryImpl", UsersRepositoryImpl.class);
 
+        UsersRepositoryImpl usersRepository = context.getBean("UsersRepository", UsersRepositoryImpl.class);
         usersRepository.createUser("Janek");
+        usersRepository.createUser("Henio 😎");
+
 
 
     }

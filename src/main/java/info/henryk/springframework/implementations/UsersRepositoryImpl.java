@@ -3,12 +3,14 @@ package info.henryk.springframework.implementations;
 import info.henryk.springframework.api.Logger;
 import info.henryk.springframework.domain.User;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
-@Service//("UsersRepository")
+@Service("UsersRepository")
 public class UsersRepositoryImpl implements info.henryk.springframework.api.UsersRepository {
 
     @Autowired
+    @Qualifier("counterLoggerXmlQualifier")
     private Logger logger;
 
     public User createUser(String name) {
