@@ -9,13 +9,29 @@ import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 
+@Service("usersRepository")
 public class UsersRepositoryImpl implements info.henryk.springframework.api.UsersRepository {
+
+    @Autowired
     private Logger logger;
 
 
+    @Value("${database.host}")
+    private String host;
+    @Value("${database.port}")
+    private int port;
+    @Value("${database.name}")
+    private String database;
+
+    @Value("#{systemProperties['database.user']}")
+    private String user;
+
+    @Value("#{systemProperties['database.password']}")
+    private String password;
+
     public User createUser(String name) {
         if (logger != null) {
-            logger.log("Tworzenie użytkownika " + name);
+            logger.log("Tworzenie użytkownika " + name + " do bazy " + host + ":" + port + "/" + database + " korzystająz z użytkownika " + user + " i hasła: " + password);
         }
         return new User(name);
     }
