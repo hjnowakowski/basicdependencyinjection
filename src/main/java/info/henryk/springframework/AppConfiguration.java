@@ -7,23 +7,17 @@ import info.henryk.springframework.implementations.WithDataLogger;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Import;
 
 @Configuration
 //@ComponentScan(basePackages = "info.henryk.springframework.implementations")
+@Import({LoggersConfiguration.class, RepositoriesConfiguration.class})
 public class AppConfiguration {
-//    @Bean
-//    public Logger logger(){
-//        return new WithDataLogger();
+
+
+
+//    @Bean(initMethod = "initMethod", destroyMethod = "destroyMethod")
+//    public SomeBean someBean(){
+//        return new SomeBean();
 //    }
-//
-//    @Bean
-//    public UsersRepository usersRepository(){
-//        UsersRepositoryImpl usersRepository = new UsersRepositoryImpl();
-//        usersRepository.setLogger(logger());
-//        return usersRepository;
-//    }
-    @Bean(initMethod = "initMethod", destroyMethod = "destroyMethod")
-    public SomeBean someBean(){
-        return new SomeBean();
-    }
 }

@@ -16,22 +16,22 @@ public class UsersRepositoryImpl implements info.henryk.springframework.api.User
     private Logger logger;
 
 
-    @Value("${database.host}")
-    private String host;
-    @Value("${database.port}")
-    private int port;
-    @Value("${database.name}")
-    private String database;
-
-    @Value("#{systemProperties['database.user']}")
-    private String user;
-
-    @Value("#{systemProperties['database.password']}")
-    private String password;
+//    @Value("${database.host}")
+//    private String host;
+//    @Value("${database.port}")
+//    private int port;
+//    @Value("${database.name}")
+//    private String database;
+//
+//    @Value("#{systemProperties['database.user']}")
+//    private String user;
+//
+//    @Value("#{systemProperties['database.password']}")
+//    private String password;
 
     public User createUser(String name) {
         if (logger != null) {
-            logger.log("Tworzenie użytkownika " + name + " do bazy " + host + ":" + port + "/" + database + " korzystająz z użytkownika " + user + " i hasła: " + password);
+            logger.log("Tworzenie użytkownika " + name);
         }
         return new User(name);
     }
