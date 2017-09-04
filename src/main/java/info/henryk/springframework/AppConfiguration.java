@@ -9,7 +9,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@ComponentScan(basePackages = "info.henryk.springframework.implementations")
+//@ComponentScan(basePackages = "info.henryk.springframework.implementations")
 public class AppConfiguration {
 //    @Bean
 //    public Logger logger(){
@@ -22,4 +22,8 @@ public class AppConfiguration {
 //        usersRepository.setLogger(logger());
 //        return usersRepository;
 //    }
+    @Bean(initMethod = "initMethod", destroyMethod = "destroyMethod")
+    public SomeBean someBean(){
+        return new SomeBean();
+    }
 }
